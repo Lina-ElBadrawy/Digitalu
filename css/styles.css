@@ -343,6 +343,34 @@ overflow-x: auto;
        color: #747474;
 
 }
+.current-offerings{
+    background: #fff;
+
+}
+.current-offerings .cards-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    overflow: hidden;
+}
+.current-offerings .card{
+   width: 30%;
+  border: 1px solid #cccccc;
+}
+.current-offerings .cards-list img{
+    width:100%;
+
+}
+.current-offerings .cards-list .title{
+
+}
+.current-offerings .cards-list .summary{
+
+}
+.current-offerings .cards-list .link{
+
+}
 @media screen and (max-width: 765px) {
 .looking-for-more .wrapper{
     flex-direction: column;
