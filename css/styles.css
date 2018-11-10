@@ -306,8 +306,8 @@ overflow-x: auto;
     flex-wrap: wrap;
     justify-content: space-between;
    
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    
+    padding-bottom: 2rem;
     overflow: hidden
 }
 .get-in-touch .card{
@@ -317,10 +317,11 @@ overflow-x: auto;
     width:25%;
    
 }
-.get-in-touch .card .title{
-    font-weight: 300;
-    font-size: 1rem;
-    columns: black;
+.get-in-touch .title{
+    font-weight: bold;
+    font-size: 4rem;
+   color:white;
+   padding-top: 2rem;
 
 }
 .get-in-touch .card .summary{
@@ -331,6 +332,15 @@ overflow-x: auto;
     
 }
 .get-in-touch .card .link{
+    color: #0033ab;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top:0.5rem;
+
+}
+.get-in-touch .card .link:hover{
+       color: #747474;
 
 }
 @media screen and (max-width: 765px) {
@@ -358,6 +368,7 @@ overflow-x: auto;
 .get-in-touch .card{
     width:100%;
     margin: 3vh;
+}
 }
 @media screen and (max-width: 800px) {
     .external-nav{
