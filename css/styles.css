@@ -11,10 +11,13 @@ body{
     height:58px;
     font-size:0.8em;
     margin:0;
+    justify-content: space-between;
 }
 .external-nav ul{
-    display: flex;
-  margin: 0;
+     display: flex;
+     margin: 0;
+     justify-content: flex-end;
+     align-items: center;
   
 }
 nav div{
@@ -22,9 +25,9 @@ nav div{
 }
 .external-nav li{
     display: flex;
-    width:120px;
+   /* width:120px;*/
     padding: 12px;
-    line-height: 3;
+   /* line-height: 3;*/
 
 }
 .internal-nav{
@@ -84,7 +87,7 @@ nav div{
 }
 .grey-bg{
     background-color: rgb(242,242,242);
-    padding: 5%;
+  
 
 }
 .branded-border{
@@ -105,7 +108,8 @@ nav div{
     font-weight: bold;
 }
 .transformation-promo {
-   
+    padding-bottom: 6em;
+    padding: 5%;
 }
 .transformation-promo .promo-title{
     width: 40%
@@ -121,7 +125,8 @@ color:rgb(141,141,141)
 
 }
 .circles-list{
-
+position: relative;
+overflow-x: auto;
 }
 .circles-background{
     height: 300px;
@@ -136,10 +141,18 @@ color:rgb(141,141,141)
     flex-wrap:nowrap;
     /*justify-content: center;*/
     position: relative;
-    top: -40px;
-    overflow-x: auto;
+   
+    padding: 0 5% 0 5%;
 }
-
+.circles-list img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 2rem;
+    height: 86%;
+    width: 100%;
+}
+.full-width{width: 100%}
 .circle{
     background-color: rgb(16,19,38);
     height: 200px;
@@ -265,7 +278,61 @@ color:rgb(141,141,141)
 .looking-for-more .btn:hover{
     background-color: #000f7b;
 }
+.inperson img{
+    width:30%;
+    height:30%;
+}
 
+.get-in-touch{
+   
+
+    
+    
+    background: #263891;
+    background: -moz-linear-gradient(left, #eb757f 0%, #263891 100%);
+    background: -webkit-linear-gradient(left, #eb757f 0%, #263891 100%);
+    background: linear-gradient(to right, #eb757f 0%, #263891 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eb757f', endColorstr='#263891', GradientType=1);
+}
+
+
+.get-in-touch .container{
+    margin: 0 9vw 0 9vw;
+
+
+}
+.get-in-touch .promo-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    overflow: hidden
+}
+.get-in-touch .card{
+    background-color: #fff;
+    padding: 1.2rem;
+   
+    width:25%;
+   
+}
+.get-in-touch .card .title{
+    font-weight: 300;
+    font-size: 1rem;
+    columns: black;
+
+}
+.get-in-touch .card .summary{
+    font-weight: 300;
+    font-size: 1rem;
+  
+    color: #555;
+    
+}
+.get-in-touch .card .link{
+
+}
 @media screen and (max-width: 765px) {
 .looking-for-more .wrapper{
     flex-direction: column;
@@ -279,6 +346,18 @@ color:rgb(141,141,141)
     width: 100%;
     padding: 0 0% 0 1%;
 }
+.get-in-touch .container{
+    margin: 0 3vw 0 3vw;
+
+
+}
+.get-in-touch .promo-cards{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.get-in-touch .card{
+    width:100%;
+    margin: 3vh;
 }
 @media screen and (max-width: 800px) {
     .external-nav{
@@ -323,6 +402,11 @@ color:rgb(141,141,141)
   
     
 
+}
+@media screen and (max-width: 990px) {
+    .card{
+
+    }
 }
 @media screen and (max-width: 1024px) {
     .transformation-promo .summary {        
