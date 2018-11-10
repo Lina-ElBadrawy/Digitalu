@@ -413,6 +413,7 @@ overflow-x: auto;
 .get-in-touch .promo-cards{
     flex-wrap: wrap;
     flex-direction: column;
+    overflow: hidden;
 }
 .get-in-touch .card{
     width:100%;
