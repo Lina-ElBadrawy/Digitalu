@@ -308,7 +308,7 @@ overflow-x: auto;
    
     
     padding-bottom: 2rem;
-    overflow: hidden
+    
 }
 .get-in-touch .card{
     background-color: #fff;
@@ -345,6 +345,7 @@ overflow-x: auto;
 }
 .current-offerings{
     background: #fff;
+    padding: 7%;
 
 }
 .current-offerings .cards-list{
@@ -353,6 +354,12 @@ overflow-x: auto;
     flex-wrap: nowrap;
     justify-content:space-between;
     overflow: hidden;
+}
+.current-offerings .card-container{
+    padding: 0 2em 2em;
+  
+    height: 100%;
+
 }
 .current-offerings .card{
    width: 30%;
@@ -363,13 +370,27 @@ overflow-x: auto;
 
 }
 .current-offerings .cards-list .title{
-
+   color: #0032ab;
+   font-weight: 700;
+   font-size: 1rem;
 }
+
+
 .current-offerings .cards-list .summary{
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: grey;
 
 }
 .current-offerings .cards-list .link{
+    color: #0032ab;
+    font-size: small;
+   
+    
 
+}
+.current-offerings .cards-list .link a{
+    text-decoration: none;
 }
 @media screen and (max-width: 765px) {
 .looking-for-more .wrapper{
