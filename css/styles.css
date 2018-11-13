@@ -1,3 +1,11 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body{
     size:16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -344,8 +352,8 @@ overflow-x: auto;
 
 }
 .current-offerings{
-    background: #fff;
-    padding: 7%;
+  
+    padding: 0;
 
 }
 .current-offerings .cards-list{
@@ -398,38 +406,57 @@ overflow-x: auto;
     margin: 0;
     /* justify-content: center; */
     padding: 0;
+    border-bottom: none;
 }
 .current-offerings .nav-tabs li{
 
 display: inline-block;
+background-color: #dcdcdc;
+margin: 0 .1rem 0 0;
+height: 100%;
+font-size: 0.9rem;
+font-weight: 600;
+
+}
+
+
+
+.current-offerings .nav-tabs li a{
+    margin-right: 0;
+    border: 0;
+    border-radius: 0;
 }
 
 .current-offerings .cards-list .link a{
     text-decoration: none;
 }
 
-.current-offerings [role="tablist"] label,
-.current-offerings [role="tablist"] input{
-    background-color: #dcdcdc;
+
+.current-offerings .nav-tabs > li.active > a,
+.current-offerings .nav-tabs > li.active > a:hover,
+.current-offerings .nav-tabs > li.active > a:focus {
+   border: 0;
+  
+}
+.current-offerings .nav-tabs > li.active > a{
+    border-top: 5px solid #0032ab;
+    color: #0032ab;
+}
+.current-offerings .nav-tabs > li.active > a:hover{
+    border-top: 5px solid #eb757f;;
+    color: #eb757f;;
+}
+
+.current-offerings .conatiner{
+    padding: 5% 5% 0 5%;
+}
+.current-offerings .tab-container{
+    width: 100%;
+    background-color: #fff;
 }
 
   /*******************************************************/
- 
 
-
-
-
-
-
-[role="tab"] {
-  display: none;
-  padding: 20px 0 0;
-  border-top: 1px solid #abc;
-}
-
-input {
-  display: none;
-}
 
 label {
   display: inline-block;
@@ -452,31 +479,6 @@ input:checked + label {
   border: 1px solid #abc;
   border-top: 2px solid #0af;
   border-bottom: 1px solid #fff;
-}
-
-#tab-Featured:checked ~ #Featured-Content,
-#tab-Agile:checked ~ #Agile-Content,
-#tab-ProdM:checked ~ #ProdM-Content,
-#tab-Data:checked ~ #Data-Content,
-#tab-dtlp:checked ~ #DTLP-Content,
-#tab-itil:checked ~ #ITIL-Content {
-  display: block;
-}
-
-@media screen and (max-width: 800px) {
-  label {
-    font-size: 0;
-  }
-  label:before {
-    margin: 0;
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  label {
-    padding: 15px;
-  }
 }
   /******************************************************/
 
