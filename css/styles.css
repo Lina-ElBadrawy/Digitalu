@@ -363,6 +363,7 @@ overflow-x: auto;
     flex-wrap: nowrap;
     justify-content:space-between;
     overflow: hidden;
+    margin-top: 3rem;
 }
 .current-offerings .card-container{
     padding: 0 2em 2em;
@@ -408,6 +409,8 @@ overflow-x: auto;
     /* justify-content: center; */
     padding: 0;
     border-bottom: none;
+   
+    height: 3.5rem;
 }
 .current-offerings .nav-tabs li{
 
@@ -417,6 +420,10 @@ margin: 0 .1rem 0 0;
 height: 100%;
 font-size: 0.9rem;
 font-weight: 600;
+align-self: center;
+min-width: 15%;
+    text-align: center;
+
 
 }
 
@@ -443,6 +450,7 @@ font-weight: 600;
 .current-offerings .nav-tabs > li.active > a:focus{
     border-top: 5px solid #0032ab;
     color: #0032ab;
+    height: 100%;
 }
 .current-offerings .nav-tabs > li.active > a:hover{
     border-top: 5px solid #eb757f;;
