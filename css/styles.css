@@ -389,9 +389,97 @@ overflow-x: auto;
     
 
 }
+
+
+.current-offerings .nav-tabs{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0;
+    /* justify-content: center; */
+    padding: 0;
+}
+.current-offerings .nav-tabs li{
+
+display: inline-block;
+}
+
 .current-offerings .cards-list .link a{
     text-decoration: none;
 }
+
+.current-offerings [role="tablist"] label,
+.current-offerings [role="tablist"] input{
+    background-color: #dcdcdc;
+}
+
+  /*******************************************************/
+ 
+
+
+
+
+
+
+[role="tab"] {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #abc;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #abc;
+  border: 1px solid transparent;
+}
+
+
+label:hover {
+  color: #789;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #0af;
+  border: 1px solid #abc;
+  border-top: 2px solid #0af;
+  border-bottom: 1px solid #fff;
+}
+
+#tab-Featured:checked ~ #Featured-Content,
+#tab-Agile:checked ~ #Agile-Content,
+#tab-ProdM:checked ~ #ProdM-Content,
+#tab-Data:checked ~ #Data-Content,
+#tab-dtlp:checked ~ #DTLP-Content,
+#tab-itil:checked ~ #ITIL-Content {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  label {
+    font-size: 0;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  label {
+    padding: 15px;
+  }
+}
+  /******************************************************/
+
 @media screen and (max-width: 765px) {
 .looking-for-more .wrapper{
     flex-direction: column;

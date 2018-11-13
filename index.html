@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>DigitalU</title>
 </head>
@@ -66,8 +68,46 @@
     <section class="grey-bg current-offerings">
         <div class="promo-title branded-border">Current Offerings</div>
 
+       <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#1" data-toggle="tab">Overview</a>
+            </li>
+            <li>
+                <a href="#2" data-toggle="tab">Without clearfix</a>
+            </li>
+            <li>
+                <a href="#3" data-toggle="tab">Solution</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="1">
+                <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
+            </div>
+            <div class="tab-pane" id="2">
+                <h3>Notice the gap between the content and tab after applying a background color</h3>
+            </div>
+            <div class="tab-pane" id="3">
+                <h3>add clearfix to tab-content (see the css)</h3>
+            </div>
+        </div>
+<!--
+
         <div role="tablist">
-            <div role="tab">
+            <input id="tab-Featured" type="radio" name="tabs" checked>
+            <label for="tab-Featured">Featured</label>
+            <input id="tab-Agile" type="radio" name="tabs">
+            <label for="tab-Agile">Agile</label>
+            <input id="tab-ProdM" type="radio" name="tabs">
+            <label for="tab-ProdM">Project Management</label>
+            <input id="tab-Data" type="radio" name="tabs">
+            <label for="tab-Data">Data Science Graduate Certificates</label>
+            <input id="tab-dtlp" type="radio" name="tabs">
+            <label for="tab-dtlp">DTLP</label>
+            <input id="tab-itil" type="radio" name="tabs">
+            <label for="tab-itil">ITIL</label>
+
+            <div id="Featured-Content" role="tab">
                 <div class="cards-list">
                     <div class="card">
                         <img src="imgs/featured_1.jpg" />
@@ -79,10 +119,7 @@
                                 <a href="">Learn More</a>
                             </div>
                         </article>
-
-
                     </div>
-
                     <div class="card">
                         <img src="imgs/featured_2.jpg" />
                         <article class="card-container">
@@ -95,9 +132,7 @@
                                 <a href="">Learn More</a>
                             </div>
                         </article>
-
                     </div>
-
                     <div class="card">
                         <img src="imgs/featured_3.jpg" />
                         <article class="card-container">
@@ -110,14 +145,39 @@
                                 <a href="">Learn More</a>
                             </div>
                         </article>
-
                     </div>
+                </div>
+            </div>
 
+            <div id="Agile-Content" role="tab">
+                <div class="cards-list">
+                    Agile
+                </div>
+            </div>
+           
+            <div id="ProdM-Content" role="tab">
+                <div class="cards-list">
+                    Product Management
+                </div>
+            </div>
+            <div id="Data-Content" role="tab">
+                <div class="cards-list">
+                   Data Science
+                </div>
+            </div>
+            <div id="DTLP-Content" role="tab">
+                <div class="cards-list">
+                   DTLP
+                </div>
+            </div>
+            <div id="ITIL-Content" role="tab">
+                <div class="cards-list">
+                   ITIL
                 </div>
             </div>
 
         </div>
-
+-->
 
     </section>
     <section class="looking-for-more">
@@ -273,5 +333,7 @@
         </div>
     </section>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 </html>
