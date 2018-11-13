@@ -9,6 +9,7 @@ html {
 body{
     size:16px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 .external-nav{
     display: flex;
@@ -438,7 +439,8 @@ font-weight: 600;
    border: 0;
   
 }
-.current-offerings .nav-tabs > li.active > a{
+.current-offerings .nav-tabs > li.active > a,
+.current-offerings .nav-tabs > li.active > a:focus{
     border-top: 5px solid #0032ab;
     color: #0032ab;
 }
@@ -453,6 +455,9 @@ font-weight: 600;
 .current-offerings .tab-container{
     width: 100%;
     background-color: #fff;
+}
+.current-offerings .tab-pane{
+    padding: 0 5%;
 }
 
   /*******************************************************/
