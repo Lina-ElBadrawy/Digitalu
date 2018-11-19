@@ -367,13 +367,15 @@ overflow-x: auto;
 }
 .current-offerings .card-container{
     padding: 0 2em 2em;
-  
     height: 100%;
+    flex-grow: 1;
 
 }
 .current-offerings .card{
    width: 30%;
   border: 1px solid #cccccc;
+  display: flex;
+    flex-flow: column;
 }
 .current-offerings .cards-list img{
     width:100%;
@@ -393,9 +395,7 @@ overflow-x: auto;
 
 }
 .current-offerings .cards-list .link{
-    color: #0032ab;
-    font-size: small;
-   
+    
     
 
 }
@@ -418,7 +418,7 @@ display: inline-block;
 background-color: #dcdcdc;
 margin: 0 .1rem 0 0;
 height: 100%;
-font-size: 0.9rem;
+font-size: 0.8rem;
 font-weight: 600;
 align-self: center;
 min-width: 15%;
@@ -433,10 +433,32 @@ min-width: 15%;
     margin-right: 0;
     border: 0;
     border-radius: 0;
+    color: black;
 }
 
 .current-offerings .cards-list .link a{
     text-decoration: none;
+    color: #0032ab;
+    font-size: 0.9rem;
+    font-weight: 700;
+   
+}
+
+.current-offerings .cards-list .link .link-icon{
+border-radius: 50%;
+  background: #0032ab;
+  padding:0.6rem;
+  width: 35px; 
+ height: 35px; 
+    display: inline-block;
+    text-align: center;
+
+  
+}
+
+.current-offerings .cards-list .link .link-icon:before{
+    content: "\f054";
+    color: #fff;
 }
 
 
@@ -463,6 +485,7 @@ min-width: 15%;
 .current-offerings .tab-container{
     width: 100%;
     background-color: #fff;
+    margin-bottom: 65px;
 }
 .current-offerings .tab-pane{
     padding: 0 5%;
