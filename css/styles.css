@@ -524,6 +524,11 @@ input:checked + label {
 }
   /******************************************************/
 
+  .current-offerings-accordion{
+      display: none
+  }
+
+
 @media screen and (max-width: 765px) {
 .looking-for-more .wrapper{
     flex-direction: column;
@@ -550,6 +555,12 @@ input:checked + label {
 .get-in-touch .card{
     width:100%;
     margin: 3vh;
+}
+.current-offerings-tabs{
+    display:none
+}
+.current-offerings-accordion{
+    display:flex;
 }
 }
 @media screen and (max-width: 800px) {
