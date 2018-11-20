@@ -396,7 +396,10 @@ overflow-x: auto;
 }
 .current-offerings .cards-list .link{
     
-    
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: center;
 
 }
 
@@ -441,6 +444,7 @@ min-width: 15%;
     color: #0032ab;
     font-size: 0.9rem;
     font-weight: 700;
+    padding: 0 8px;
    
 }
 
@@ -452,6 +456,7 @@ border-radius: 50%;
  height: 35px; 
     display: inline-block;
     text-align: center;
+    line-height: 1.3;
 
   
 }
@@ -459,6 +464,7 @@ border-radius: 50%;
 .current-offerings .cards-list .link .link-icon:before{
     content: "\f054";
     color: #fff;
+    font-size: 0.7rem;
 }
 
 
