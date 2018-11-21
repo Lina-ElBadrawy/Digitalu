@@ -487,6 +487,7 @@ border-radius: 50%;
 
 .current-offerings .conatiner{
     padding: 5% 5% 0 5%;
+    width:100%;
 }
 .current-offerings .tab-container{
     width: 100%;
@@ -526,6 +527,60 @@ input:checked + label {
 
   .current-offerings-accordion{
       display: none
+  }
+  #accordion .panel {
+    border-radius: 0;
+    border: 0;
+    margin-top: 0px;
+  }
+  #accordion a {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+  }
+  #accordion .panel-heading a.collapsed:hover,
+  #accordion .panel-heading a.collapsed:focus {
+    background-color: #fff;
+    color: black;
+    transition: all 0.2s ease-in;
+  }
+  #accordion .panel-heading a.collapsed:hover::before,
+  #accordion .panel-heading a.collapsed:focus::before {
+    color: #444;
+  }
+  #accordion .panel-heading {
+    padding: 0;
+    border-radius: 0px;
+    
+  }
+  #accordion .panel-heading a:not(.collapsed) {
+    color: black;
+    background-color: #fff;
+    transition: all 0.2s ease-in;
+  }
+  
+  /* Add Indicator fontawesome icon to the left */
+  #accordion .panel-heading .accordion-toggle::before {
+    font-family: 'FontAwesome';
+    content: '\f00d';
+    float: left;
+    color: #444;
+    font-weight: lighter;
+    transform: rotate(0deg);
+    transition: all 0.2s ease-in;
+    margin: 0 10px 0 0;
+    padding: 0;
+  }
+  #accordion .panel-heading .accordion-toggle.collapsed::before {
+    color: #444;
+    transform: rotate(-135deg);
+    transition: all 0.2s ease-in;
+    margin: 0 10px 0 0;
+    padding: 0;
+  }
+  #accordion{
+    width:100%;
   }
 
 
