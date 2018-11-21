@@ -581,6 +581,7 @@ input:checked + label {
   }
   #accordion{
     width:100%;
+    background: #fff;
   }
 
 
@@ -616,6 +617,19 @@ input:checked + label {
 }
 .current-offerings-accordion{
     display:flex;
+}
+.current-offerings-accordion .cards-list{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+}
+.current-offerings-accordion .card{
+    width:100%;
+    
+}
+.current-offerings-accordion .card img{
+   display:none
+    
 }
 }
 @media screen and (max-width: 800px) {
