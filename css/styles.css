@@ -449,11 +449,11 @@ min-width: 15%;
 }
 
 .current-offerings .cards-list .link .link-icon{
-border-radius: 50%;
+   border-radius: 50%;
   background: #0032ab;
   padding:0.6rem;
   width: 35px; 
- height: 35px; 
+  height: 35px; 
     display: inline-block;
     text-align: center;
     line-height: 1.3;
@@ -538,6 +538,7 @@ input:checked + label {
     padding: 10px 15px;
     border-bottom: 1px solid #fff;
     text-decoration: none;
+    color: black;
   }
   #accordion .panel-heading a.collapsed:hover,
   #accordion .panel-heading a.collapsed:focus {
@@ -550,8 +551,10 @@ input:checked + label {
     color: #444;
   }
   #accordion .panel-heading {
-    padding: 0;
+   
     border-radius: 0px;
+    padding:0.9rem;
+    border-top: 2px solid #c8c8c8;
     
   }
   #accordion .panel-heading a:not(.collapsed) {
@@ -561,27 +564,44 @@ input:checked + label {
   }
   
   /* Add Indicator fontawesome icon to the left */
-  #accordion .panel-heading .accordion-toggle::before {
+  #accordion .panel-heading .accordion-toggle::after {
     font-family: 'FontAwesome';
-    content: '\f00d';
-    float: left;
-    color: #444;
+    content: '\f067';
+  
+    float: right;
+    color: #fff;
     font-weight: lighter;
     transform: rotate(0deg);
     transition: all 0.2s ease-in;
-    margin: 0 10px 0 0;
-    padding: 0;
+   
+    
+
+    border-radius: 50%;
+    background: #0032ab;
+    padding:0.6rem;
+    width: 35px; 
+    height: 35px; 
+      text-align: center;
+    
   }
-  #accordion .panel-heading .accordion-toggle.collapsed::before {
-    color: #444;
-    transform: rotate(-135deg);
+  #accordion .panel-heading .accordion-toggle.collapsed::after {
+      content: "\f068";
+    color: #fff;
+   
     transition: all 0.2s ease-in;
-    margin: 0 10px 0 0;
     padding: 0;
+    text-align: center;
+    padding:0.6rem;
   }
   #accordion{
     width:100%;
     background: #fff;
+  }
+  #accordion .panel-title{
+      margin:0
+  }
+  .current-offerings-accordion.conatiner{
+      padding:5%;
   }
 
 
