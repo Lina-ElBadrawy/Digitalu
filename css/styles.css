@@ -650,8 +650,8 @@ input:checked + label {
     
 }
 .disciplines .card{
-    width:20vw;
-    padding:1rem;
+   width: 15vw;
+    padding: 1rem;
 }
 .disciplines .card .summary{
     font-size: 0.9rem;
@@ -660,6 +660,68 @@ input:checked + label {
 .identation{
     padding-left: 10vw;
 }
+@media screen and (max-width: 1024px) {
+    .header-promo .summary {        
+        padding: 10px 0;
+        width:100%;
+    }
+    }
+    @media screen and (max-width: 990px) {
+        .disciplines .card{
+            width:20vw;
+    
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .external-nav{
+            border-bottom: 0.1px groove gray;
+        }
+        .external-nav ul{
+            display: none
+        }
+        .internal-nav{
+            display: block;
+            background-color: black;
+            color: #fff;
+             height: 100%;
+        }
+        .internal-nav div{
+            font-size: 1rem;
+            border-bottom: 0.1px groove gray;
+            padding: 10px 0;
+        }
+        .internal-nav ul{
+            display: block;
+            font-weight: normal;
+            font-size: 1em;
+            margin: 0px;
+        }
+    
+        .internal-nav li{
+            width:100%;
+            display: block;
+            padding: 5px;
+            height: 20px;
+            line-height: 1;
+            border-bottom: 0.1px groove gray;
+        }
+        .hero-wrapper{
+            padding: 10vw 0 0 10vw;
+        }
+        .hero .summary{
+            padding:0;
+            width: 100%;
+        }
+        .disciplines .card{
+            width:100%;
+    
+        }
+      
+        
+    
+    }
+    
 
 @media screen and (max-width: 765px) {
 .looking-for-more .wrapper{
@@ -696,7 +758,7 @@ input:checked + label {
 }
 .current-offerings-accordion .cards-list{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin:0;
 }
 .current-offerings-accordion .card{
@@ -709,59 +771,3 @@ input:checked + label {
 }
 }
 
-
-@media screen and (max-width: 800px) {
-    .external-nav{
-        border-bottom: 0.1px groove gray;
-    }
-    .external-nav ul{
-        display: none
-    }
-    .internal-nav{
-        display: block;
-        background-color: black;
-        color: #fff;
-         height: 100%;
-    }
-    .internal-nav div{
-        font-size: 1rem;
-        border-bottom: 0.1px groove gray;
-        padding: 10px 0;
-    }
-    .internal-nav ul{
-        display: block;
-        font-weight: normal;
-        font-size: 1em;
-        margin: 0px;
-    }
-
-    .internal-nav li{
-        width:100%;
-        display: block;
-        padding: 5px;
-        height: 20px;
-        line-height: 1;
-        border-bottom: 0.1px groove gray;
-    }
-    .hero-wrapper{
-        padding: 10vw 0 0 10vw;
-    }
-    .hero .summary{
-        padding:0;
-        width: 100%;
-    }
-  
-    
-
-}
-@media screen and (max-width: 990px) {
-    .card{
-
-    }
-}
-@media screen and (max-width: 1024px) {
-    .header-promo .summary {        
-        padding: 10px 0;
-        width:100%;
-    }
-    }
