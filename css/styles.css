@@ -334,6 +334,7 @@ overflow-x: auto;
     font-size: 4rem;
    color:white;
    padding-top: 2rem;
+   margin-top: 0;
 
 }
 .get-in-touch .card .summary{
@@ -607,8 +608,10 @@ input:checked + label {
       padding:5%;
   }
 
-  .inperson.container{
-    padding: 3% 5% 0 5%;
+  .inperson .container{
+    padding-top: 3% ;
+    padding-bottom: 3%;
+    
     position: relative;
 
 
@@ -618,7 +621,7 @@ input:checked + label {
   }
   .inperson .card{
     background-color: #fff;
-    width: 30%;
+    width: 36%;
     /* float: right; */
     position: absolute;
     /* float: right; */
@@ -660,10 +663,24 @@ input:checked + label {
 .identation{
     padding-left: 10vw;
 }
+
+@media screen and (max-width:1238px) {
+    .inperson .summary{
+        font-size: 1rem;
+        
+    }
+    
+}
 @media screen and (max-width: 1024px) {
     .header-promo .summary {        
         padding: 10px 0;
         width:100%;
+    }
+
+    .inperson .card{
+        width:45%;
+        right: 10%;
+
     }
     }
     @media screen and (max-width: 990px) {
@@ -671,6 +688,13 @@ input:checked + label {
             width:20vw;
     
         }
+            .inperson .card {
+                width: 53%;
+                right: 2%;
+                top: 10%;
+                bottom: 5%;
+            }
+           
     }
     
     @media screen and (max-width: 800px) {
@@ -716,6 +740,16 @@ input:checked + label {
         .disciplines .card{
             width:100%;
     
+        }
+        .inperson .container{
+            position: static;
+        }
+        .inperson .card{
+            width: 74%;
+            left: 6%;
+            top: -85px;
+            position: relative;
+            height: 100%;
         }
       
         
