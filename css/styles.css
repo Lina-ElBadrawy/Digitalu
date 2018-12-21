@@ -108,10 +108,13 @@ nav div{
     -o-border-image: linear-gradient(to left,#213691 0%,#f0777f 100%) 30 stretch;
     border-image: -webkit-gradient(linear,right top,left top,from(#213691),to(#f0777f)) 30 stretch;
     border-image: linear-gradient(to left,#213691 0%,#f0777f 100%) 30 stretch;
-   font-size: 3em;
+   
+
+}
+.branded-title{
+    font-size: 3em;
    
    padding: 20px 0;
-
 }
 .promo-title{
     font-weight: bold;
@@ -448,7 +451,7 @@ min-width: 15%;
    
 }
 
-.current-offerings .cards-list .link .link-icon{
+.chevron.link .link-icon{
    border-radius: 50%;
   background: #0032ab;
   padding:0.6rem;
@@ -461,7 +464,7 @@ min-width: 15%;
   
 }
 
-.current-offerings .cards-list .link .link-icon:before{
+.chevron.link .link-icon:before{
     content: "\f054";
     color: #fff;
     font-size: 0.7rem;
@@ -604,6 +607,41 @@ input:checked + label {
       padding:5%;
   }
 
+  .inperson.container{
+    padding: 3% 5% 0 5%;
+    position: relative;
+
+
+  }
+  .inperson img{
+      width:80%
+  }
+  .inperson .card{
+    background-color: #fff;
+    width: 30%;
+    /* float: right; */
+    position: absolute;
+    /* float: right; */
+    top: 20%;
+    right: 15%;
+    /* height: 50%; */
+    padding: 2rem;
+    bottom: 10%;
+      
+  }
+  .inperson .summary{
+    font-size: 1.35rem;
+    color: rgb(141,141,141);
+  }
+  .inperson .chevron.link .link-icon{
+    width: 50px;
+    height: 50px;
+    
+    line-height: 1.8;
+  }
+  .inperson .chevron.link{
+    padding-top: 25px;
+  }
 
 @media screen and (max-width: 765px) {
 .looking-for-more .wrapper{
