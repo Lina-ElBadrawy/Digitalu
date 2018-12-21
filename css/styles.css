@@ -119,19 +119,19 @@ nav div{
 .promo-title{
     font-weight: bold;
 }
-.transformation-promo {
+.header-promo {
     padding-bottom: 6em;
     padding: 5%;
 }
-.transformation-promo .promo-title{
+.header-promo .promo-title{
     width: 40%
 }
-.transformation-promo .summary{
+.header-promo .summary{
 font-size: 0.4em;
 width: 55%;
 color:rgb(141,141,141)
 }
-.transformation-promo div{
+.header-promo div{
     display:flex;
     flex-wrap: wrap
 
@@ -308,7 +308,7 @@ overflow-x: auto;
 }
 
 
-.get-in-touch .container{
+.container{
     margin: 0 9vw 0 9vw;
 
 
@@ -643,13 +643,31 @@ input:checked + label {
     padding-top: 25px;
   }
 
+  .disciplines .cards-list{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    
+}
+.disciplines .card{
+    width:20vw;
+    padding:1rem;
+}
+.disciplines .card .summary{
+    font-size: 0.9rem;
+    color: grey;
+}
+.identation{
+    padding-left: 10vw;
+}
+
 @media screen and (max-width: 765px) {
 .looking-for-more .wrapper{
     flex-direction: column;
 }
 .left-wrapper{
    
-    width:100%
+    width:100%       
 }
 .right-wrapper{
     float: right;
@@ -678,7 +696,7 @@ input:checked + label {
 }
 .current-offerings-accordion .cards-list{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin:0;
 }
 .current-offerings-accordion .card{
@@ -690,6 +708,8 @@ input:checked + label {
     
 }
 }
+
+
 @media screen and (max-width: 800px) {
     .external-nav{
         border-bottom: 0.1px groove gray;
@@ -740,7 +760,7 @@ input:checked + label {
     }
 }
 @media screen and (max-width: 1024px) {
-    .transformation-promo .summary {        
+    .header-promo .summary {        
         padding: 10px 0;
         width:100%;
     }
