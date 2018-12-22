@@ -274,7 +274,7 @@ position: relative;
 .promo-link{
 
 }
-.looking-for-more .btn{
+.btn{
     background-color: #0033ab;
     padding: 10px;
     margin-top: 2em;
@@ -284,6 +284,7 @@ position: relative;
     font-weight: 700;
     cursor: pointer;
     min-width: 100px;
+    color: #fff
 
 }
 .looking-for-more .btn::after { 
@@ -665,6 +666,22 @@ input:checked + label {
 .identation{
     padding-left: 10vw;
 }
+.stay-in-the-know{
+    background-image: url('../imgs/bg_stayintheknow.jpg');
+    height: 100%;
+    width:100%;
+    background-size: cover;
+    color:#fff;
+}
+.stay-in-the-know .title{
+    font-weight: bold;
+    font-size: 4rem;
+   padding-top: 2rem;
+   margin-top: 0;
+
+}
+.stay-in-the-know .email-input{}
+.stay-in-the-know .btn{}
 
 @media screen and (max-width:1238px) {
     .inperson .summary{
