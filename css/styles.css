@@ -696,6 +696,8 @@ input:checked + label {
     height: 40px;
     align-self: center;
     width:60%;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 .stay-in-the-know .btn{
     height: 100%;
