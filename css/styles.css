@@ -667,21 +667,43 @@ input:checked + label {
     padding-left: 10vw;
 }
 .stay-in-the-know{
-    background-image: url('../imgs/bg_stayintheknow.jpg');
+    background: url('../imgs/bg_stayintheknow.jpg') no-repeat center center fixed;
     height: 100%;
     width:100%;
     background-size: cover;
     color:#fff;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.stay-in-the-know .container{
+    padding-bottom: 3rem
 }
 .stay-in-the-know .title{
     font-weight: bold;
     font-size: 4rem;
-   padding-top: 2rem;
+   padding-top: 3rem;
    margin-top: 0;
 
 }
-.stay-in-the-know .email-input{}
-.stay-in-the-know .btn{}
+.stay-in-the-know .email-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+.stay-in-the-know .email-input{
+    height: 40px;
+    align-self: center;
+    width:60%;
+}
+.stay-in-the-know .btn{
+    height: 100%;
+    align-self: center;
+    margin-top: 0;
+    margin:3rem;
+    min-width: 150px;
+}
 
 @media screen and (max-width:1238px) {
     .inperson .summary{
@@ -713,10 +735,18 @@ input:checked + label {
                 top: 10%;
                 bottom: 5%;
             }
+            
            
     }
     
     @media screen and (max-width: 800px) {
+        .stay-in-the-know .btn{
+            margin-left: 0;
+           
+        }
+        .stay-in-the-know .email-input{
+            width:100%
+        }
         .external-nav{
             border-bottom: 0.1px groove gray;
         }
